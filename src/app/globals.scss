@@ -1,0 +1,22 @@
+/* ========== styles/globals.scss ========== */
+
+/* Reset stylów */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ciało strony */
+body {
+  font-family: sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+/* Podstawowe klasy pomocnicze */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}

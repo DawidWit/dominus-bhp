@@ -1,0 +1,38 @@
+/* ========== styles/Home.module.scss ========== */
+
+.hero {
+  background: url("https://picsum.photos/seed/hero/1280/720") center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* Nagłówek w hero */
+  h1 {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.section {
+  padding: 2rem 0;
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #0070f3; /* Jasnoniebieski */
+  }
+
+  p {
+    line-height: 1.6;
+  }
+}
+
+/* Stopka */
+.footer {
+  text-align: center;
+  background-color: #ddd;
+  padding: 1rem;
+}
