@@ -14,7 +14,24 @@ export default function Home() {
       </Head>
 
       {/* Hero Section */}
+
       <header className={styles.hero}>
+        <div className={styles.heroSticky}>
+          <a href="">
+            <img
+              src="https://png.pngtree.com/png-clipart/20190611/original/pngtree-wolf-logo-png-image_2306634.jpg"
+              width="60"
+            />
+          </a>
+          <ol>
+            <li>
+              <a>Home</a>
+            </li>
+            <li>
+              <a>Gallery</a>
+            </li>
+          </ol>
+        </div>
         <h1>Witaj na mojej stronie!</h1>
       </header>
 
@@ -38,7 +55,7 @@ export default function Home() {
       </main>
 
       {/* Stopka */}
-      <footer className={styles.footer}>
+      <footer className={styles.footer} id="dupa">
         <p>&copy; 2024 Moja OnePage. Wszelkie prawa zastrzeżone.</p>
       </footer>
     </>
