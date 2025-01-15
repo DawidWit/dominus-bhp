@@ -1,5 +1,9 @@
 import styles from "./page.module.scss";
 import Head from "next/head";
+import Image from "next/image";
+import LogoFull from "./../../public/logo_full_500x500.webp"
+import Logo from "./../../public/logo_500x500.webp"
+import WebFooter from "@/components/footer";
 
 export default function Home() {
   return (
@@ -17,11 +21,14 @@ export default function Home() {
 
       <header className={styles.hero}>
         <div className={styles.heroSticky}>
-          <a href="">
-            <img
-              src="https://png.pngtree.com/png-clipart/20190611/original/pngtree-wolf-logo-png-image_2306634.jpg"
-              width="60"
-            />
+          <a >
+            DOMINUS
+            {/* <Image
+            width={200}
+            height={200}
+            alt="Picture of the author"
+              src={Logo}
+            /> */}
           </a>
           <ol>
             <li>
@@ -32,7 +39,12 @@ export default function Home() {
             </li>
           </ol>
         </div>
-        <h1>Witaj na mojej stronie!</h1>
+        <Image
+      src={LogoFull}
+      width={1000}
+      height={1000}
+      alt="Picture of the author"
+    />
       </header>
 
       {/* Główna treść */}
@@ -55,9 +67,7 @@ export default function Home() {
       </main>
 
       {/* Stopka */}
-      <footer className={styles.footer} id="dupa">
-        <p>&copy; 2024 Moja OnePage. Wszelkie prawa zastrzeżone.</p>
-      </footer>
+      <WebFooter/>
     </>
   );
 }

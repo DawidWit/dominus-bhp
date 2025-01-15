@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddd;
+    padding: 1rem;
+    background-color: #00b38d;
+    color: white;
+    #main_part{
+        margin: 50px 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10vw;
+        
+        .logo_footer{
+            color: white;
+            text-decoration: none;
+            font-size: 50px;
+        }
+        .links{
+            margin: 30px 0;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            a,p{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+    
+}
+
+
