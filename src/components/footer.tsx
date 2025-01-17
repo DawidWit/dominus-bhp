@@ -10,6 +10,6 @@ export default function WebFooter(){
         </div>
         
         {/* <div className={styles.divider}></div> */}
-    <p>&copy; 2024 BALIŃSKA MARIA Szkolenia w zakresie BHP "DOMINUS". Wszelkie prawa zastrzeżone.</p>
+    <p>&copy; 2024 BALIŃSKA MARIA Szkolenia w zakresie BHP &quot;DOMINUS&quot;. Wszelkie prawa zastrzeżone.</p>
   </footer>
 }

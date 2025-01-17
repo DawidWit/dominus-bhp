@@ -25,7 +25,7 @@ const ContactForm = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data : any) => {
+  const onSubmit = (data : any ) => {
     console.log("Dane formularza:", data);
     alert("Formularz został wysłany!");
   };

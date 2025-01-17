@@ -1,0 +1,53 @@
+.heroSticky {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+    width: 100vw;
+    height: 80px;
+    top: 0;
+    position: fixed;
+    padding: 0 50px;
+
+    ol {
+        display: flex;
+        gap: 20px;
+
+        li {
+            list-style-type: none;
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+
+.heroStickyTransparent {
+    background-color: transparent !important;
+}
+
+
+.heroSticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+//   .heroStickyTransparent {
+//     background-color: transparent;
+//     color: white;
+//   }
+
+.scrolled {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.nav_button {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}

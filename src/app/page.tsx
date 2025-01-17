@@ -2,8 +2,10 @@ import styles from "./page.module.scss";
 import Head from "next/head";
 import Image from "next/image";
 import LogoFull from "./../../public/logo_full_500x500.webp"
-import Logo from "./../../public/logo_500x500.webp"
 import WebFooter from "@/components/footer";
+
+import WebNav from "@/components/nav/nav";
+import InfoSection from "@/components/info_stage/info_stage";
 
 export default function Home() {
   return (
@@ -20,25 +22,8 @@ export default function Home() {
       {/* Hero Section */}
 
       <header className={styles.hero}>
-        <div className={styles.heroSticky}>
-          <a >
-            DOMINUS
-            {/* <Image
-            width={200}
-            height={200}
-            alt="Picture of the author"
-              src={Logo}
-            /> */}
-          </a>
-          <ol>
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Gallery</a>
-            </li>
-          </ol>
-        </div>
+        <WebNav/>
+        
         <Image
       src={LogoFull}
       width={1000}
@@ -56,7 +41,7 @@ export default function Home() {
             rozwiązania dla początkujących programistów.
           </p>
         </section>
-
+        <InfoSection/>
         <section className={styles.section}>
           <h2>Co robimy?</h2>
           <p>
