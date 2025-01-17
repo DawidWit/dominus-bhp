@@ -22,16 +22,16 @@ export default function Home() {
       {/* Hero Section */}
 
       <header className={styles.hero}>
-        <WebNav/>
-        
-        <Image
-      src={LogoFull}
-      width={1000}
-      height={1000}
-      alt="Picture of the author"
-    />
-      </header>
+        <WebNav />
 
+        <Image
+          src={LogoFull}
+          width={1000}
+          height={1000}
+          alt="Picture of the author"
+        />
+      </header>
+//test
       {/* Główna treść */}
       <main className="container">
         <section className={styles.section}>
@@ -41,7 +41,7 @@ export default function Home() {
             rozwiązania dla początkujących programistów.
           </p>
         </section>
-        <InfoSection/>
+        <InfoSection />
         <section className={styles.section}>
           <h2>Co robimy?</h2>
           <p>
@@ -52,7 +52,7 @@ export default function Home() {
       </main>
 
       {/* Stopka */}
-      <WebFooter/>
+      <WebFooter />
     </>
   );
 }
