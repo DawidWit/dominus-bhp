@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dominus BHP Polska",
-  description: "Dominus BHP Polska – kompleksowe usługi z zakresu bezpieczeństwa i higieny pracy na terenie całej Polski. Szkolenia, audyty i doradztwo BHP dla firm w każdej branży.",
+  title: "Dominus – Ponad 20 lat doświadczenia w doradztwie prawnym i BHP",
+  description: "Firma Maria Balińska „Dominus” od ponad dwóch dekad wspiera przedsiębiorstwa w realizacji wymogów prawnych oraz w zakresie bezpieczeństwa i higieny pracy. Tworzymy zespół wykwalifikowanych prawników, który zapewnia kompleksowe wsparcie dostosowane do potrzeb klienta.",
 };
 
 export default function RootLayout({

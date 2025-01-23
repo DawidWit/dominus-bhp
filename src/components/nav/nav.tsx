@@ -37,18 +37,23 @@ export default function WebNav() {
         <li>
           <a >STRONA GŁÓWNA</a>
         </li>
+        <span>•</span>
         <li>
           <a >O NAS</a>
         </li>
+        <span>•</span>
+        <li>
+          <a >KONTAKT</a>
+        </li>
       </ol>
-      <div style={{ gap: "10px", display: "flex" , width: "200px", justifyContent: "flex-end"}}>
+      {/* <div style={{ gap: "10px", display: "flex" , width: "200px", justifyContent: "flex-end"}}>
         <button className={styles.nav_button}>
           <Icon path={mdiPhone} size={1} color="black" />
         </button>
         <button className={styles.nav_button}>
           <Icon path={mdiEmail} size={1.1} color="black" />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

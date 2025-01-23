@@ -4,23 +4,26 @@ import Image from "next/image";
 import LogoFull from "./../../public/logo_full_500x500.webp"
 import WebFooter from "@/components/footer/footer";
 import WebNav from "@/components/nav/nav";
-import InfoSection from "@/components/info_stage/info_stage";
+import About from "@/app/sections/about/about";
+import {Section} from "@/components/section/section";
+import Services from "./sections/services/services";
 
 export default function Home() {
   return (
     <>
       {/* Head służy do ustawiania tagów <head>, np. <title> */}
       <Head>
-        <title>Dominus BHP Szkolenia z zakresu BHP</title>
+        <title>Dominus – Ponad 20 lat doświadczenia w doradztwie prawnym i BHP</title>
         <meta
-          name="Dominus BHP Szkolenia z zakresu BHP Polska"
-          content="Dominus BHP Polska – kompleksowe usługi z zakresu bezpieczeństwa i higieny pracy na terenie całej Polski. Szkolenia, audyty i doradztwo BHP dla firm w każdej branży."
+          name="Dominus – Ponad 20 lat doświadczenia w doradztwie prawnym i BHP"
+          content="Firma Maria Balińska „Dominus” od ponad dwóch dekad wspiera przedsiębiorstwa w realizacji wymogów prawnych oraz w zakresie bezpieczeństwa i higieny pracy. Tworzymy zespół wykwalifikowanych prawników, który zapewnia kompleksowe wsparcie dostosowane do potrzeb klienta."
         />
       </Head>
 
       {/* Hero Section */}
 
       <header className={styles.hero}>
+        
         <WebNav />
 
         <Image
@@ -32,21 +35,12 @@ export default function Home() {
       </header>
       {/* Główna treść */}
       <main className="container">
-        <section className={styles.section}>
-          <h2>O nas</h2>
-          <p>
-            Jesteśmy zespołem pasjonatów front-endu. Tworzymy nowoczesne
-            rozwiązania dla początkujących programistów.
-          </p>
-        </section>
-        <InfoSection />
-        <section className={styles.section}>
-          <h2>Co robimy?</h2>
-          <p>
-            Oferujemy proste przykłady projektów w HTML, CSS i React (Next.js),
-            które pomogą Ci nauczyć się podstaw programowania.
-          </p>
-        </section>
+      <Section backgroundColor="#003399"> <About /></Section>
+      <Section backgroundColor="#ffffff"> <Services /></Section>
+      <Section backgroundColor="#003399"><h1>sdfghjk</h1></Section>
+
+        
+        
       </main>
 
       {/* Stopka */}
