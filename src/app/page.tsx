@@ -7,6 +7,7 @@ import WebNav from "@/components/nav/nav";
 import About from "@/app/sections/about/about";
 import {Section} from "@/components/section/section";
 import Services from "./sections/services/services";
+import ContactForm from "@/components/contact_form/contact_form";
 
 export default function Home() {
   return (
@@ -40,7 +41,7 @@ export default function Home() {
       <Section backgroundColor="#003399"><h1>sdfghjk</h1></Section>
 
         
-        
+      <ContactForm/>
       </main>
 
       {/* Stopka */}

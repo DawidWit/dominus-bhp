@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 3vw;
   li {
@@ -19,19 +20,19 @@
   }
 }
 #serviceBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
   border-radius: 15px;
   height: 200px;
   background-color: #003399;
-  width: calc(20% - 2.5vw) ;
+  width: calc(20% - 2.5vw);
   min-width: 250px;
   max-width: 300px;
 }
 
 #serviceBox:hover {
-     transition:  0.25s linear;
-    transform: scale(1.03);
-  }
+  transition: 0.25s linear;
+  transform: scale(1.03);
+}
