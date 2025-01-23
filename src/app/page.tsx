@@ -31,7 +31,6 @@ export default function Home() {
           alt="Picture of the author"
         />
       </header>
-//test
       {/* Główna treść */}
       <main className="container">
         <section className={styles.section}>

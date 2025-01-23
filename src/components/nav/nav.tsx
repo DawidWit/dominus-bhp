@@ -2,7 +2,7 @@
 
 import Icon from "@mdi/react";
 import styles from "./nav.module.scss";
-import { mdiEmail, mdiEmailNewsletter, mdiMail, mdiPhone } from "@mdi/js";
+import { mdiEmail, mdiPhone } from "@mdi/js";
 import { useEffect, useState } from "react";
 
 export default function WebNav() {
