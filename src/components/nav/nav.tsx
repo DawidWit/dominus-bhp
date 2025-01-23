@@ -33,12 +33,12 @@ export default function WebNav() {
         height={45}
         alt="Company logo"
       />
-      <ol>
+      <ol className={styles.menu_button}>
         <li>
-          <a>Home</a>
+          <a >STRONA GŁÓWNA</a>
         </li>
         <li>
-          <a>Gallery</a>
+          <a >O NAS</a>
         </li>
       </ol>
       <div style={{ gap: "10px", display: "flex" , width: "200px", justifyContent: "flex-end"}}>

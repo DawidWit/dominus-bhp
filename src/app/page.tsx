@@ -2,8 +2,7 @@ import styles from "./page.module.scss";
 import Head from "next/head";
 import Image from "next/image";
 import LogoFull from "./../../public/logo_full_500x500.webp"
-import WebFooter from "@/components/footer";
-
+import WebFooter from "@/components/footer/footer";
 import WebNav from "@/components/nav/nav";
 import InfoSection from "@/components/info_stage/info_stage";
 
@@ -14,7 +13,7 @@ export default function Home() {
       <Head>
         <title>Dominus BHP Szkolenia z zakresu BHP</title>
         <meta
-          name="Dominus BHP Polska"
+          name="Dominus BHP Szkolenia z zakresu BHP Polska"
           content="Dominus BHP Polska – kompleksowe usługi z zakresu bezpieczeństwa i higieny pracy na terenie całej Polski. Szkolenia, audyty i doradztwo BHP dla firm w każdej branży."
         />
       </Head>
