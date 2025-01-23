@@ -12,11 +12,12 @@ body {
   font-family: sans-serif;
   background-color: #f1f1f1;
   color: #333;
+  // overflow-x: hidden;
 }
 
 /* Podstawowe klasy pomocnicze */
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
+  // margin: 0 auto;
+  // padding: 1rem;
 }
