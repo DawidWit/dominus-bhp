@@ -12,10 +12,10 @@ export default function Home() {
     <>
       {/* Head służy do ustawiania tagów <head>, np. <title> */}
       <Head>
-        <title>Moja OnePage</title>
+        <title>Dominus BHP Szkolenia z zakresu BHP</title>
         <meta
-          name="description"
-          content="Przykładowa strona OnePage w Next.js + SCSS"
+          name="Dominus BHP Polska"
+          content="Dominus BHP Polska – kompleksowe usługi z zakresu bezpieczeństwa i higieny pracy na terenie całej Polski. Szkolenia, audyty i doradztwo BHP dla firm w każdej branży."
         />
       </Head>
 

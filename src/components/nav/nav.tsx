@@ -4,6 +4,8 @@ import Icon from "@mdi/react";
 import styles from "./nav.module.scss";
 import { mdiEmail, mdiPhone } from "@mdi/js";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import NavLogo from "./../../../public/nav_logo.png";
 
 export default function WebNav() {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -22,11 +24,15 @@ export default function WebNav() {
 
   return (
     <div
-      className={`${styles.heroSticky} ${
-        hasScrolled ? styles.scrolled : styles.heroStickyTransparent
-      }`}
+      className={`${styles.heroSticky} ${hasScrolled ? styles.scrolled : styles.heroStickyTransparent
+        }`}
     >
-      <a>DOMINUS</a>
+      <Image
+        src={NavLogo}
+        width={200}
+        height={45}
+        alt="Company logo"
+      />
       <ol>
         <li>
           <a>Home</a>
@@ -35,7 +41,7 @@ export default function WebNav() {
           <a>Gallery</a>
         </li>
       </ol>
-      <div style={{ gap: "10px", display: "flex" }}>
+      <div style={{ gap: "10px", display: "flex" , width: "200px", justifyContent: "flex-end"}}>
         <button className={styles.nav_button}>
           <Icon path={mdiPhone} size={1} color="black" />
         </button>
