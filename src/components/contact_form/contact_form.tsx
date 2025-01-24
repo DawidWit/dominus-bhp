@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import styles from "./commant_form.module.scss";
 
@@ -18,7 +18,9 @@ const ContactForm: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -53,10 +55,13 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div style={{ maxWidth: "600px", margin: "0 auto" }}>
-      <h1>Contact Us</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
+    <>
+      <h2>Skontaktuj się z nami</h2>
+      <form
+        onSubmit={handleSubmit}
+        style={{ maxWidth: "600px", margin: "0 auto" }}
+      >
+        <div className={styles.inputContainer}>
           <label htmlFor="name">Name:</label>
           <input
             id="name"
@@ -68,7 +73,7 @@ const ContactForm: React.FC = () => {
           />
         </div>
 
-        <div>
+        <div className={styles.inputContainer}>
           <label htmlFor="email">Email:</label>
           <input
             id="email"
@@ -81,7 +86,7 @@ const ContactForm: React.FC = () => {
           />
         </div>
 
-        <div>
+        <div className={styles.inputContainer}>
           <label htmlFor="message">Message:</label>
           <textarea
             id="message"
@@ -92,15 +97,20 @@ const ContactForm: React.FC = () => {
             required
           />
         </div>
-
-        <button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? "Sending..." : "Send Message"}
-        </button>
+        <div className={styles.buttonContainer}>
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className={styles.sendingButton}
+          >
+            {isSubmitting ? "WYSYŁANIE..." : "WYŚLIJ"}
+          </button>
+        </div>
 
         {error && <p style={{ color: "red" }}>{error}</p>}
         {success && <p style={{ color: "green" }}>{success}</p>}
       </form>
-    </div>
+    </>
   );
 };
 
