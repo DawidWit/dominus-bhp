@@ -37,8 +37,9 @@
 //   }
 
 .scrolled {
-  background-color: #003399;
+  background-color:#0A1343;
   color: rgb(0, 0, 0);
+  border-bottom: 1px solid white;
 }
 
 .nav_button {
@@ -53,11 +54,11 @@
 
 .menu_button
 {
-    color: white;
+    color: #D0D6B3;
 }
 
 .menu_button a {
-    color: white;
+    color: #D0D6B3;
   font-weight: bold;
   cursor: pointer;
   position: relative;
@@ -73,8 +74,8 @@
   height: 2px;
   background: linear-gradient(
     to right,
-    rgba(170, 199, 250, 1),
-    rgba(39, 143, 198, 1)
+    rgba(218, 215, 205, 1),
+    rgba(106,112,98,1)
   );
   transition: width 0.3s ease;
 }

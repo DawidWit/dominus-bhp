@@ -37,7 +37,7 @@ export default function Home() {
       </header>
 
       <main className="container">
-        <Section backgroundColor="#003399">
+        <Section backgroundColor="#6A7062">
           {" "}
           <About />
         </Section>

@@ -20,7 +20,7 @@ export default function Services() {
                 {"Szkolenia \n BHP"}
               </h3>
             }
-            text="Kompleksowa organizacja szkoleń wstępnych, okresowych oraz stanowiskowych, dostosowanych do specyfiki danego stanowiska i branży"
+            text="Kompleksowa organizacja szkoleń wstępnych, okresowych oraz pomoc w tworzeniu programów szkoleń stanowiskowych, dostosowanych do specyfiki danego stanowiska i branży"
           />
           <ServicesBox
             title={
@@ -35,7 +35,7 @@ export default function Services() {
                 {"Dokumentacja \n BHP"}
               </h3>
             }
-            text="Tworzenie projektów instrukcji, ocen ryzyka zawodowego, planów
+            text="Tworzenie projektów zarządzeń, instrukcji BHP, ocen ryzyka zawodowego, planów
                 BIOZ i innych wymaganych dokumentów"
           />
           <ServicesBox
@@ -51,8 +51,7 @@ export default function Services() {
                 {"Dokumentacja HACCP i RODO"}
               </h3>
             }
-            text="Przygotowanie niezbędnych dokumentów związanych z
-                bezpieczeństwem żywności i ochroną danych osobowych"
+            text="Przygotowanie niezbędnych dokumentów związanych z ochroną danych osobowych"
           />
           <ServicesBox
             title={
@@ -83,7 +82,7 @@ export default function Services() {
                 {"Reprezentacja przed organami"}
               </h3>
             }
-            text="Zapewnienie wsparcia w kontaktach z Państwową Inspekcją Pracy oraz Państwową Inspekcją Sanitarną, obejmujące doradztwo i reprezentację"
+            text="Zapewnienie wsparcia w kontaktach z Państwową Inspekcją Pracy oraz Państwową Inspekcją Sanitarną oraz innymi organami, obejmujące doradztwo i reprezentację"
           />
         </div>
       </div>
