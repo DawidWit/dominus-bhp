@@ -12,12 +12,13 @@
     grid-area: text;
     background-color: transparent;
     width: 100%;
-    height: 55vh;
+    height: 100%; /* Make sure it takes full height */
     flex-direction: column;
-    align-items: flex-start; /* Align text to the left */
-    justify-content: center;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
     flex-wrap: wrap;
-    padding: 0 50px 0 100px; /* Adjust padding for letter format */
+    padding: 0 50px; /* Adjust padding as needed */
+    text-align: center; /* Ensures the text is centered */
   }
 
   .text p {
@@ -39,7 +40,7 @@
 
   .signature {
     font-family: "Great Vibes", cursive !important; /* Uses CSS variable */
-  font-size: 2.2rem !important; /* Ensures size applies */
+    font-size: 2.2rem !important; /* Ensures size applies */
     color: white; /* Keep text color */
     font-weight: 400; /* Ensure correct weight */
     text-align: left;
@@ -48,8 +49,17 @@
 
   .photo {
     grid-area: photo;
-    background-color: rgba(62, 68, 43, 1);
+    background-color: #0a1343;
     width: 100%;
-    height: 50vh;
+    height: 100%; /* Ensure it stretches to match the text */
+    display: flex; /* Allows the image to take up full height */
+    align-items: center; /* Centers the image vertically */
+    justify-content: center; /* Centers the image horizontally */
+  }
+
+  .image {
+    width: 100%; /* Ensures the image fills the container */
+    height: 100%; /* Ensures the image stretches to match */
+    object-fit: cover; /* Ensures the image scales properly without distortion */
   }
 }

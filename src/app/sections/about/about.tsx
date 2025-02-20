@@ -1,4 +1,5 @@
 import styles from "./about.module.scss";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -19,7 +20,16 @@ export default function About() {
         </p>
         <p className={styles.signature}>Maria Balińska</p>
       </div>
-      <div className={styles.photo}></div>
+      <div className={styles.photo}>
+        {" "}
+        <Image
+          src="/about_us_photo.jpg"
+          alt="About Us"
+          width={600}
+          height={400}
+          className={styles.image}
+        />
+      </div>
     </section>
   );
 }

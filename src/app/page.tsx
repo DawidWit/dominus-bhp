@@ -37,18 +37,18 @@ export default function Home() {
       </header>
 
       <main className="container">
-        <Section backgroundColor="#6A7062">
+        <Section backgroundColor= "#f2f2eb">
           {" "}
           <About />
         </Section>
-        <Section backgroundColor="#ffffff">
+        <Section backgroundColor="#f2f2eb">
           {" "}
           <Services />
         </Section>
-        <Section backgroundColor="#003399">
+        <Section backgroundColor="#0a1343">
           <h1>sdfghjk</h1>
         </Section>
-        <Section backgroundColor="#ffffff">
+        <Section backgroundColor="#f2f2eb">
           <ContactForm />
         </Section>
       </main>
