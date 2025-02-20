@@ -5,10 +5,15 @@ interface ServicesBoxProps {
     text: String
   }
 
-export function ServicesBox({title, text}: ServicesBoxProps) {
-    return <div id={style.serviceBox}>
-        {title}
-        <div style={{width:"100%",height:"1px",background:"white", margin: "10px 0" }}></div>
-        <p style={{color:"white", textAlign:"center"}}>{text}</p>
-    </div>
-}
+  export function ServicesBox({ title, text }: ServicesBoxProps) {
+    return (
+      <div id={style.serviceBox}>
+        <div className={style.serviceBoxTitle}>
+          {title}
+        </div>
+        <div style={{ width: "100%", height: "1px", background: "white", margin: "10px 0" }}></div>
+        <p style={{ color: "white", textAlign: "center" }}>{text}</p>
+      </div>
+    );
+  }
+  

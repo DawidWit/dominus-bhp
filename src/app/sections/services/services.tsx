@@ -5,7 +5,9 @@ export default function Services() {
   return (
     <section className={`${styles.container}`}>
       <div className={styles.text}>
-        <h2 style={{ textAlign: "center", marginBottom: "30px"}}>Kompleksowe usługi BHP i prawne</h2>
+        <h2 style={{ textAlign: "center", marginBottom: "30px" }}>
+          Kompleksowe usługi BHP i prawne
+        </h2>
         <div className={styles.services_list}>
           <ServicesBox
             title={
@@ -51,7 +53,7 @@ export default function Services() {
                 {"Dokumentacja HACCP i RODO"}
               </h3>
             }
-            text="Przygotowanie niezbędnych dokumentów związanych z ochroną danych osobowych"
+            text="Opracowanie dokumentacji zgodnej z RODO, w tym polityki prywatności i procedur ochrony danych, a także przygotowanie księgi HACCP oraz instrukcji zapewniających bezpieczeństwo żywności."
           />
           <ServicesBox
             title={
@@ -83,6 +85,21 @@ export default function Services() {
               </h3>
             }
             text="Zapewnienie wsparcia w kontaktach z Państwową Inspekcją Pracy oraz Państwową Inspekcją Sanitarną oraz innymi organami, obejmujące doradztwo i reprezentację"
+          />
+          <ServicesBox
+            title={
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "white",
+                  textTransform: "uppercase",
+                  whiteSpace: "pre-line",
+                }}
+              >
+                {"lex Kamilek"}
+              </h3>
+            }
+            text='Zapewnienie pomocy prawnej podmiotom we wdrażaniu standardów ochrony małoletnich w oparciu o ustawę "LEX KAMILEK"'
           />
         </div>
       </div>

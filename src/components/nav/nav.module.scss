@@ -2,13 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: red;
+  background-color: transparent;
   width: 100vw;
   height: 80px;
   top: 0;
   position: fixed;
   padding: 0 50px;
-
+  z-index: 100;
   ol {
     display: flex;
     gap: 20px;
@@ -20,8 +20,19 @@
   }
 }
 
+
+.heroSticky.fadedOut {
+  opacity: 0;
+  pointer-events: none; 
+}
+
 .heroStickyTransparent {
   background-color: transparent !important;
+}
+
+.fadedOut img {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .heroSticky {
@@ -30,11 +41,6 @@
   width: 100%;
   transition: background-color 0.3s ease;
 }
-
-//   .heroStickyTransparent {
-//     background-color: transparent;
-//     color: white;
-//   }
 
 .scrolled {
   background-color:#0A1343;
@@ -54,11 +60,11 @@
 
 .menu_button
 {
-    color: #D0D6B3;
+    color: white;
 }
 
 .menu_button a {
-    color: #D0D6B3;
+    color: white;
   font-weight: bold;
   cursor: pointer;
   position: relative;
@@ -75,7 +81,7 @@
   background: linear-gradient(
     to right,
     rgba(218, 215, 205, 1),
-    rgba(106,112,98,1)
+    rgb(128, 127, 125),
   );
   transition: width 0.3s ease;
 }
