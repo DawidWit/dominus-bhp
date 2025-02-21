@@ -1,117 +1,35 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import styles from "./commant_form.module.scss";
 
-interface FormData {
-  name: string;
-  email: string;
-  message: string;
-}
-
-const ContactForm: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [success, setSuccess] = useState<string | null>(null);
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setError(null);
-    setSuccess(null);
-
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || "Something went wrong.");
-      }
-
-      setSuccess("Message sent successfully!");
-      setFormData({ name: "", email: "", message: "" });
-    } catch (err: any) {
-      setError(err.message);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
+export default function ContactForm() {
   return (
-    <>
-      <h2>Skontaktuj się z nami</h2>
-      <form
-        onSubmit={handleSubmit}
-        style={{ maxWidth: "600px", margin: "0 auto" }}
-      >
-        <div className={styles.inputContainer}>
-          <label htmlFor="name">Name:</label>
-          <input
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Enter your name"
-            required
-          />
+    <section className={styles.container}>
+      <h2 className={styles.title}>Kontakt</h2>
+      <div className={styles.contactInfo}>
+        <div className={styles.infoItem}>
+          <p>
+            Piotroniowice 41a <br />
+            56-100 Wołów, Polska
+          </p>
         </div>
 
-        <div className={styles.inputContainer}>
-          <label htmlFor="email">Email:</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Enter your email"
-            required
-          />
+        {/* Phone numbers in a column */}
+        <div className={styles.infoItemColumn}>
+          <p>
+            <a href="tel:+48692731924">+48 692 731 924</a>
+          </p>
+          <p>
+            <a href="tel:+48123456789">+48 123 456 789</a>
+          </p>
         </div>
 
-        <div className={styles.inputContainer}>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Enter your message"
-            required
-          />
+        <div className={styles.infoItem}>
+          <p>
+            <a href="mailto:bmaria131@gmail.com">bmaria131@gmail.com</a>
+          </p>
         </div>
-        <div className={styles.buttonContainer}>
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className={styles.sendingButton}
-          >
-            {isSubmitting ? "WYSYŁANIE..." : "WYŚLIJ"}
-          </button>
-        </div>
-
-        {error && <p style={{ color: "red" }}>{error}</p>}
-        {success && <p style={{ color: "green" }}>{success}</p>}
-      </form>
-    </>
+      </div>
+    </section>
   );
-};
-
-export default ContactForm;
+}
