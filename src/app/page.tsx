@@ -12,7 +12,6 @@ import Contact from "@/components/contact_form/contact";
 export default function Home() {
   return (
     <>
-      {/* Head służy do ustawiania tagów <head>, np. <title> */}
       <Head>
         <title>
           Dominus – Ponad 20 lat doświadczenia w doradztwie prawnym i BHP
@@ -22,9 +21,6 @@ export default function Home() {
           content="Firma Maria Balińska „Dominus” od ponad dwóch dekad wspiera przedsiębiorstwa w realizacji wymogów prawnych oraz w zakresie bezpieczeństwa i higieny pracy. Tworzymy zespół wykwalifikowanych prawników, który zapewnia kompleksowe wsparcie dostosowane do potrzeb klienta."
         />
       </Head>
-
-      {/* Hero Section */}
-
       <header className={styles.hero}>
         <WebNav />
 
