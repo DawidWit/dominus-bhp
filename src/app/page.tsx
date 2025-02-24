@@ -8,6 +8,7 @@ import About from "@/app/sections/about/about";
 import { Section } from "@/components/section/section";
 import Services from "./sections/services/services";
 import Contact from "@/components/contact_form/contact";
+import Experience from "./sections/experience/experience";
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
       </header>
 
       <main className="container">
-        <Section id="aboutid" backgroundColor= "#f2f2eb">
+        <Section id="aboutid" backgroundColor="#f2f2eb">
           {" "}
           <About />
         </Section>
@@ -41,8 +42,8 @@ export default function Home() {
           {" "}
           <Services />
         </Section>
-        <Section id="" backgroundColor="#0a1343">
-          <h1>sdfghjk</h1>
+        <Section id="" backgroundColor="#f2f2eb">
+          <Experience />
         </Section>
         <Section id="contactid" backgroundColor="#f2f2eb">
           <Contact />

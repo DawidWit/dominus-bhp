@@ -8,8 +8,8 @@ export default function About() {
         <p className={styles.salutation}>Szanowni Państwo,</p>
         <p className={styles.paragraph}>
           Nazywam się Maria Balińska i jestem założycielką firmy Dominus BHP.
-          Jestem absolwentką Wydziału Prawa i Administracji Uniwersytetu im.
-          Adama Mickiewicza w Poznaniu oraz posiadam specjalistyczne
+          Jestem absolwentką Wydziału Prawa i Administracji na Uniwersytecie im.
+          Adama Mickiewicza w Poznaniu na kierunku prawo oraz posiadam specjalistyczne
           kwalifikacje w zakresie bezpieczeństwa i higieną pracy.
         </p>
         <p className={styles.paragraph}>
