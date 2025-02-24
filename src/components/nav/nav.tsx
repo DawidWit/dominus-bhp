@@ -12,8 +12,8 @@ export default function WebNav() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      setHasScrolled(scrollPosition > 150); 
-      setIsFadedOut(scrollPosition < 100); 
+      setHasScrolled(scrollPosition > 150);
+      setIsFadedOut(scrollPosition < 100);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -23,9 +23,20 @@ export default function WebNav() {
     };
   }, []);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const yOffset = -80;
+      const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
   return (
     <div
-      className={`${styles.heroSticky} ${hasScrolled ? styles.scrolled : ""} ${isFadedOut ? styles.fadedOut : ""}`}
+      className={`${styles.heroSticky} ${hasScrolled ? styles.scrolled : ""} ${
+        isFadedOut ? styles.fadedOut : ""
+      }`}
     >
       <Image
         src={NavLogo}
@@ -36,15 +47,15 @@ export default function WebNav() {
       />
       <ol className={styles.menu_button}>
         <li>
-          <a>STRONA GŁÓWNA</a>
+          <a onClick={() => scrollToSection("aboutid")}>STRONA GŁÓWNA</a>
         </li>
         <span>•</span>
         <li>
-          <a>O NAS</a>
+          <a onClick={() => scrollToSection("servicesid")}>O NAS</a>
         </li>
         <span>•</span>
         <li>
-          <a>KONTAKT</a>
+          <a onClick={() => scrollToSection("contactid")}>KONTAKT</a>
         </li>
       </ol>
     </div>

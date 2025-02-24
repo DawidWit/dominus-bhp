@@ -2,9 +2,18 @@ import style from "./section.module.scss";
 
 interface SectionProps {
   children: React.ReactNode;
-  backgroundColor: String
+  id: string;
+  backgroundColor: string;
 }
 
-export function Section({ children, backgroundColor }: SectionProps) {
-  return <section className={style.section} style={{background: `${backgroundColor}`}}>{children}</section>;
+export function Section({ children, id, backgroundColor }: SectionProps) {
+  return (
+    <section
+      id={id}
+      className={style.section}
+      style={{ background: backgroundColor }}
+    >
+      {children}
+    </section>
+  );
 }

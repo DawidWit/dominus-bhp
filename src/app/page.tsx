@@ -7,7 +7,7 @@ import WebNav from "@/components/nav/nav";
 import About from "@/app/sections/about/about";
 import { Section } from "@/components/section/section";
 import Services from "./sections/services/services";
-import ContactForm from "@/components/contact_form/contact_form";
+import Contact from "@/components/contact_form/contact";
 
 export default function Home() {
   return (
@@ -37,19 +37,19 @@ export default function Home() {
       </header>
 
       <main className="container">
-        <Section backgroundColor= "#f2f2eb">
+        <Section id="aboutid" backgroundColor= "#f2f2eb">
           {" "}
           <About />
         </Section>
-        <Section backgroundColor="#f2f2eb">
+        <Section id="servicesid" backgroundColor="#f2f2eb">
           {" "}
           <Services />
         </Section>
-        <Section backgroundColor="#0a1343">
+        <Section id="" backgroundColor="#0a1343">
           <h1>sdfghjk</h1>
         </Section>
-        <Section backgroundColor="#f2f2eb">
-          <ContactForm />
+        <Section id="contactid" backgroundColor="#f2f2eb">
+          <Contact />
         </Section>
       </main>
       <WebFooter />

@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
-import styles from "./commant_form.module.scss";
-// Optionally import icons, e.g. from react-icons/fa
+import styles from "./contact.module.scss";
 
-export default function ContactForm() {
+export default function Contact() {
   return (
     <section className={styles.container}>
       <h2 className={styles.title}>Kontakt</h2>
