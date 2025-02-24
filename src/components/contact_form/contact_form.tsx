@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./commant_form.module.scss";
+// Optionally import icons, e.g. from react-icons/fa
 
 export default function ContactForm() {
   return (
@@ -9,21 +10,21 @@ export default function ContactForm() {
       <div className={styles.contactInfo}>
         <div className={styles.infoItem}>
           <p>
-            Piotroniowice 41a <br />
-            56-100 Wołów, Polska
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Piotroniowice+41a,+56-100+Wołów,+Polska"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Piotroniowice 41a <br />
+              56-100 Wołów, Polska
+            </a>
           </p>
         </div>
-
-        {/* Phone numbers in a column */}
-        <div className={styles.infoItemColumn}>
+        <div className={styles.infoItem}>
           <p>
             <a href="tel:+48692731924">+48 692 731 924</a>
           </p>
-          <p>
-            <a href="tel:+48123456789">+48 123 456 789</a>
-          </p>
         </div>
-
         <div className={styles.infoItem}>
           <p>
             <a href="mailto:bmaria131@gmail.com">bmaria131@gmail.com</a>
