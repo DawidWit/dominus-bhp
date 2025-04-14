@@ -2,7 +2,7 @@ import style from "./services.module.scss";
 
 interface ServicesBoxProps {
   title: React.ReactNode;
-  text: String;
+  text: string;
 }
 
 export function ServicesBox({ title, text }: ServicesBoxProps) {
