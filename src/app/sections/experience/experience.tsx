@@ -17,7 +17,7 @@ const Experience = () => {
         <li>przerobu odpadów, biogazowni, fabryk styropianu, betoniarni</li>
         <li>transportowej, edukacyjnej</li>
       </ul>
-      <p className={styles.paragraph}>
+      <p className={styles.paragraphBottom}>
         Braliśmy udział w nadzorze prac przy budowie Stadionu we Wrocławiu na
         EURO 2012, modernizacji Dworca Głównego we Wrocławiu oraz nadzorze prac
         ziemnych na Autostradowej Obwodnicy Wrocławia. Mieliśmy także swój wkład

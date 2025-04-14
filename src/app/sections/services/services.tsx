@@ -53,7 +53,7 @@ export default function Services() {
                 {"Dokumentacja HACCP i RODO"}
               </h3>
             }
-            text="Opracowanie dokumentacji zgodnej z RODO, w tym polityki prywatności i procedur ochrony danych, a także przygotowanie księgi HACCP oraz instrukcji zapewniających bezpieczeństwo żywności."
+            text="Opracowanie dokumentacji zgodnej z RODO, w tym polityki prywatności i procedur ochrony danych, a także przygotowanie księgi HACCP oraz instrukcji zapewniających bezpieczeństwo żywności"
           />
           <ServicesBox
             title={

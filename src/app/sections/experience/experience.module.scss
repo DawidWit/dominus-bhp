@@ -6,14 +6,21 @@
 .paragraph {
   font-size: 1.2rem;
   color: black;
+  text-align: center;
   line-height: 1.6;
-  margin-bottom: 1rem;
 }
 
+.paragraphBottom {
+  font-size: 1.2rem;
+  color: black;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: -3rem;
+}
 
 .list {
     list-style: none;
-    padding: 0;
+    padding-bottom: 3rem;
     margin: 1.5rem 0;
     display: flex;
     flex-direction: column;

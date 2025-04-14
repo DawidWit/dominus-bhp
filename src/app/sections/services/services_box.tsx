@@ -1,19 +1,18 @@
 import style from "./services.module.scss";
 
 interface ServicesBoxProps {
-    title: React.ReactNode;
-    text: String
-  }
+  title: React.ReactNode;
+  text: String;
+}
 
-  export function ServicesBox({ title, text }: ServicesBoxProps) {
-    return (
-      <div id={style.serviceBox}>
-        <div className={style.serviceBoxTitle}>
-          {title}
-        </div>
-        <div style={{ width: "100%", height: "1px", background: "white", margin: "10px 0" }}></div>
-        <p style={{ color: "white", textAlign: "center" }}>{text}</p>
+export function ServicesBox({ title, text }: ServicesBoxProps) {
+  return (
+    <div id={style.serviceBox}>
+      <div className={style.serviceBoxTitle}>{title}</div>
+      <div className={style.divider}></div>
+      <div className={style.textWrapper}>
+        <p className={style.serviceBoxText}>{text}</p>
       </div>
-    );
-  }
-  
+    </div>
+  );
+}

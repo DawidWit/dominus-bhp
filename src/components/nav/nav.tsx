@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import styles from "./nav.module.scss";
 import Image from "next/image";
-import NavLogo from "./../../../public/nav_logo.png";
+import NavLogo from "./../../../public/logo-dominus-small.png";
 
 export default function WebNav() {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -40,7 +40,7 @@ export default function WebNav() {
     >
       <Image
         src={NavLogo}
-        width={200}
+        width={275}
         height={45}
         alt="Company logo"
         className={isFadedOut ? styles.fadedOut : ""}

@@ -1,5 +1,4 @@
 $primary-blue: #0a1343;
-/* Reset stylów */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,7 @@ $primary-blue: #0a1343;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: var(--font-playfair-display);
   background-color: #f1f1f1;
   color: #333;
 }

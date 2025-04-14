@@ -1,7 +1,8 @@
 import styles from "./page.module.scss";
 import Head from "next/head";
 import Image from "next/image";
-import LogoFull from "./../../public/logo_full_500x500.webp";
+//import LogoFull from "./../../public/logo_full_500x500.webp";
+import LogoFull from "./../../public/logo-dominus.png";
 import WebFooter from "@/components/footer/footer";
 import WebNav from "@/components/nav/nav";
 import About from "@/app/sections/about/about";
@@ -24,13 +25,23 @@ export default function Home() {
       </Head>
       <header className={styles.hero}>
         <WebNav />
-
-        <Image
-          src={LogoFull}
-          width={1000}
-          height={1000}
-          alt="Picture of the author"
-        />
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            maxWidth: "1000px",
+            margin: "0 auto",
+          }}
+        >
+          <Image
+            src={LogoFull}
+            alt="Dominus logo"
+            layout="responsive"
+            width={500}
+            height={500}
+            priority
+          />
+        </div>
       </header>
 
       <main className="container">

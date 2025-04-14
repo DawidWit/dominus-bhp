@@ -4,7 +4,7 @@
 import styles from "./footer.module.scss";
 import stylesNav from "./../nav/nav.module.scss";
 import Image from "next/image";
-import NavLogo from "./../../../public/nav_logo.png";
+import NavLogo from "./../../../public/logo-dominus-small.png";
 
 export default function WebFooter() {
   const scrollToSection = (id: string) => {
@@ -22,8 +22,8 @@ export default function WebFooter() {
         <a href="" className={styles.logo_footer}>
           <Image
             src={NavLogo}
-            width={250}
-            height={55}
+            width={275}
+            height={45}
             alt="Company logo"
           ></Image>
         </a>
@@ -57,8 +57,6 @@ export default function WebFooter() {
           </a>
         </div>
       </div>
-
-      {/* <div className={styles.divider}></div> */}
       <p>
         &copy; 2025 BALIŃSKA MARIA Szkolenia w zakresie BHP &quot;DOMINUS&quot;.
         Wszelkie prawa zastrzeżone.
