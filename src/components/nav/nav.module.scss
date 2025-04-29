@@ -3,90 +3,84 @@
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
-  width: 100vw;
+  width: 100%;
   height: 80px;
   top: 0;
   position: fixed;
   padding: 0 50px;
   z-index: 100;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+
   ol {
     display: flex;
+    flex-direction: row;
     gap: 20px;
+    margin: 0;
+    padding: 0;
 
     li {
-      list-style-type: none;
-      color: rgb(0, 0, 0);
+      list-style: none;
+      color: white;
     }
   }
 }
 
-
 .heroSticky.fadedOut {
-  opacity: 0;
-  pointer-events: none; 
-}
-
-.heroStickyTransparent {
-  background-color: transparent !important;
-}
-
-.fadedOut img {
   opacity: 0;
   pointer-events: none;
 }
 
-.heroSticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  transition: background-color 0.3s ease;
-}
-
 .scrolled {
-  background-color:#0A1343;
-  color: rgb(0, 0, 0);
+  background-color: #0a1343;
   border-bottom: 1px solid white;
 }
 
-.nav_button {
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-}
+.menu_button {
+  color: white;
 
-.menu_button
-{
+  a {
     color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(
+        to right,
+        rgba(218, 215, 205, 1),
+        rgb(128, 127, 125)
+      );
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
 }
 
-.menu_button a {
-    color: white;
-  font-weight: bold;
-  cursor: pointer;
-  position: relative;
-  text-decoration: none;
-}
+@media (max-width: 768px) {
+  .heroSticky {
+    justify-content: center; 
+    padding: 10px 20px;
+  }
 
-.menu_button a::after {
-  position: absolute;
-  content: '';
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    rgba(218, 215, 205, 1),
-    rgb(128, 127, 125),
-  );
-  transition: width 0.3s ease;
-}
+  .heroSticky img {
+    display: none; 
+  }
 
-.menu_button a:hover::after {
-  width: 100%;
-}
+  .menu_button {
+    justify-content: center; 
+  }
 
+  .menu_button a {
+    font-size: 0.9rem;
+  }
+}

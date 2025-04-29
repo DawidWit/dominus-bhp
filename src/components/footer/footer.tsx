@@ -1,60 +1,20 @@
-
 "use client";
 
 import styles from "./footer.module.scss";
-import stylesNav from "./../nav/nav.module.scss";
 import Image from "next/image";
 import NavLogo from "./../../../public/logo-dominus-small.png";
 
 export default function WebFooter() {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const yOffset = -80;
-      const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
-      window.scrollTo({ top: y, behavior: "smooth" });
-    }
-  };
-
   return (
     <footer className={styles.footer}>
       <div id={styles.main_part}>
-        <a href="" className={styles.logo_footer}>
-          <Image
-            src={NavLogo}
-            width={275}
-            height={45}
-            alt="Company logo"
-          ></Image>
+        <a href="#" className={styles.logo_footer}>
+          <Image src={NavLogo} width={275} height={45} alt="Company logo" />
         </a>
-        <div className={`${styles.links} ${stylesNav.menu_button}`}>
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("aboutid");
-            }}
-          >
-            STRONA GŁÓWNA
-          </a>
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("servicesid");
-            }}
-          >
-            O NAS
-          </a>
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("contactid");
-            }}
-          >
-            KONTAKT
-          </a>
+        <div className={styles.links}>
+          <a href="#">STRONA GŁÓWNA</a>
+          <a href="#">O NAS</a>
+          <a href="#">KONTAKT</a>
         </div>
       </div>
       <p>
